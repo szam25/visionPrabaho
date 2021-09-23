@@ -1,3 +1,9 @@
-#homeHeader{
+.homeHeader{
     text-align: center;
+}
+#mainHomeText{
+    color: #2A351F;
+    background-color: #fff;
+    margin: 5rem;
+    text-align: left;
 }
