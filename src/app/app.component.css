@@ -1,0 +1,119 @@
+.content{
+	display:flex;
+	margin:82px auto 32px;
+	flex-direction: column;
+	align-items: center;
+}
+.rotate-img{
+	width: 100%;
+}
+#myCarousel{
+	width:60%;
+}
+.heading-spacer{
+	width:100%;
+	height:3%;
+}
+#my-example{
+	margin-left:10%;
+}
+#naving-header{
+	margin:0.5% 1%;
+}
+#dropdownmenu>ul>li{
+	float:left;
+	padding: 0 3px;
+	margin:0 3px;
+}
+#dropdownmenu, #dropdownmenu ul, #dropdownmenuul li, #dropdownmenu ul li a{
+	border:0;
+	list-style:none;
+	line-height:1;
+	display:block;
+	position:relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#dropdownmenu ul ul{
+	position:absolute;
+	left:-9999px;
+	margin: 0 0 0 -43px;
+	z-index: 3;
+}
+#dropdownmenu ul ul li{
+	height:0;
+	-webkit-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	background: #1cb8a1;
+	transition: all .25s ease;
+	border-bottom: 1px #149885 solid;
+}
+#dropdownmenu>ul>li>a{
+	padding: 20px 10px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #333;
+	font-family: "Open Sans";
+	text-transform: "inherit";
+}
+#dropdownmenu ul ul li a{
+	border-bottom: 1px solid rgba(150,150,150,.15);
+	padding: 14px 14px;
+	line-height: 14px;
+	width: 210px;
+	font-size: 14px;
+	text-decoration: none;
+	color:#fff;
+	font-weight: 400;
+	font-family: "Open Sans";	
+}
+#dropdownmenu ul ul ul{
+	margin-left: 79%;
+	top: 0;
+}
+#dropdownmenu  li:hover>ul{
+	left: auto;
+}
+#dropdownmenu  li:hover>ul>li{
+	height: 43px;
+}
+#dropdownmenu  ul ul li.last-item>a, #dropdownmenu  ul ul li:last-child>a{
+	border-bottom:0;
+}
+#dropdownmenu  ul li.active, #dropdownmenu  ul li.active:hover, #dropdownmenu  ul li.has-sub.active:hover, #dropdownmenu>ul>li:hover{
+	background: #1cb8a1 !important;
+	-webkit-transition: background .3s ease;
+	-ms-transition: background .3s ease;
+	transition: background .3s ease;
+	color: #333;
+}
+#dropdownmenu ul ul li a i{
+	text-align: right;
+	float: right;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 1000px){
+	#dropdownmenu .submenu{
+		position: absolute;
+		z-index: 99;
+		right:0;
+		top: 0;
+		display: block;
+		height: 46px;
+		width:46px;
+		cursor: pointer;
+	}
+	#dropdownmenu .sub:before{
+		position: absolute;
+		top: 19px;
+		right: 22px;
+		display: block;
+		width: 2px;
+		height: 8px;
+		background: #ddd;
+		content: ' ';
+	}
+}
