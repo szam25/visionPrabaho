@@ -6,9 +6,10 @@
 }
 .rotate-img{
 	width: 100%;
+	height: 500px !important;
 }
 #myCarousel{
-	width:60%;
+	width:65%;
 }
 .heading-spacer{
 	width:100%;
@@ -116,4 +117,7 @@
 		background: #ddd;
 		content: ' ';
 	}
+}
+.pictureMessageColor{
+	color:#00203FFF;
 }
