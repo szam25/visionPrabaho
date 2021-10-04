@@ -1,8 +1,8 @@
-.homeHeader{
+.visionHeader{
     text-align: center;
     color:#00203FFF;
 }
-#mainHomeText{
+#mainVisionText{
     color: #006344;
     background-color: #fff;
     margin: 5%;
@@ -10,13 +10,10 @@
     font-family: "Open Sans";
     font-size: 18px;
 }
-.storyImg{
-    width: 120%;
+.visionImg{
+    width: 110%;
     padding: 16px;
 }
-#textPic{
-    padding: 7%; 
-}
-.visionText{
-    color:#00203FFF;
+#textVisionPic{
+    padding: 5%; 
 }
