@@ -10,3 +10,10 @@
     font-family: "Open Sans";
     font-size: 18px;
 }
+.storyImg{
+    width: 120%;
+    padding: 16px;
+}
+#textPic{
+    padding: 10%; 
+}
