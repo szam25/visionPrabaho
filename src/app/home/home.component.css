@@ -5,8 +5,18 @@
 #mainHomeText{
     color: #006344;
     background-color: #fff;
-    margin: 5rem;
+    margin: 5%;
     text-align: left;
     font-family: "Open Sans";
     font-size: 18px;
+}
+.storyImg{
+    width: 120%;
+    padding: 16px;
+}
+#textPic{
+    padding: 7%; 
+}
+.visionText{
+    color:#00203FFF;
 }

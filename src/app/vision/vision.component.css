@@ -1,0 +1,19 @@
+.visionHeader{
+    text-align: center;
+    color:#00203FFF;
+}
+#mainVisionText{
+    color: #006344;
+    background-color: #fff;
+    margin: 5%;
+    text-align: left;
+    font-family: "Open Sans";
+    font-size: 18px;
+}
+.visionImg{
+    width: 110%;
+    padding: 16px;
+}
+#textVisionPic{
+    padding: 5%; 
+}

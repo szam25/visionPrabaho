@@ -1,3 +1,4 @@
+body {margin:0;}
 .content{
 	display:flex;
 	margin:82px auto 32px;
@@ -131,7 +132,13 @@
 	transition:visibility 0s, .6s;
 	z-index:21;
 }
-
+.navbar {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+  }
 .cd-panel:after{
 	position:absolute;
 	top:0;
@@ -275,6 +282,9 @@ ul li.has-subnav .accordion-btn i{
 }
 
 @media only screen and (max-width: 768px){
+	#myCarousel{
+		width:100%;
+	}
 	.is-visible .cd-panel-container{
 		padding-top: 55px;
 	}
