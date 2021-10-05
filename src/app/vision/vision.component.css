@@ -1,6 +1,7 @@
 .visionHeader{
-    text-align: center;
+    text-align: left;
     color:#00203FFF;
+    padding-left: 20px;
 }
 #mainVisionText{
     color: #006344;
