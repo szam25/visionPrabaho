@@ -17,7 +17,7 @@ import { FoundingsComponent } from './foundings/foundings.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
