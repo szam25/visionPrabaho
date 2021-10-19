@@ -1,13 +1,15 @@
+
 .homeHeader{
     text-align: center;
     color:#00203FFF;
+    font-family: 'Eczar', serif;
 }
 #mainHomeText{
-    color: #006344;
+    color: #00203FFF;
     background-color: #fff;
     margin: 5%;
     text-align: left;
-    font-family: "Open Sans";
+    font-family: "Alegreya";
     font-size: 18px;
 }
 .storyImg{
@@ -20,4 +22,53 @@
 }
 .visionText{
     color:#00203FFF;
+    font-family: 'Eczar', serif;
+}
+.carousel-inner>.item>img{
+    width: 100%;
+}
+.carousel-caption{
+    text-align: right;
+}
+button {
+    border-radius: 10px;
+    font-size: 20px;
+    color:red;
+    background-color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+}
+button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    transition: 0.5s;
+}
+  
+button:hover span {
+    padding-right: 25px;
+    
+
+}
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.coverText{
+    color: #00203FFF;
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
 }

@@ -1,0 +1,29 @@
+.groupPic{
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+}
+
+form {
+    padding-top: 1rem;
+    text-align: center;
+    color:#00203FFF;
+}
+div{
+    text-align: center; 
+    color:#00203FFF;
+}
+label {
+    display: block;
+    margin: .5em 0;
+    font-weight: bold;
+}
+button{
+    margin: 20px;
+    color:red;
+    background-color: white;
+}
+button:disabled,
+button[disabled]{
+    color:black
+}
