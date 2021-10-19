@@ -1,0 +1,16 @@
+<div>
+<img class="groupPic" src="../../assets/DSC_0178.JPG" alt="Group picture">
+<h1>Vision Prabaho Contact Form</h1>
+    <p>Do you want to be a part of the team Vision Prabaho?</p>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name: </label>
+    <input id="name" type="text" formControlName="name" required>
+    <label for="name">Email: </label>
+    <input id="email" type="text" formControlName="email" required>
+    <label for="name">Phone Number: </label>
+    <input id="phNumber" type="number" formControlName="phNumber" required>
+    <p>Complete the form to enable button.</p>
+    <a><button type="submit" [disabled]="!profileForm.valid">Submit</button></a>
+    
+</form>
+</div>

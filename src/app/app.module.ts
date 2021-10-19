@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { VisionComponent } from './vision/vision.component';
 import { FoundingsComponent } from './foundings/foundings.component';
+import { GetInvolvedComponent } from './get-involved/get-involved.component';
+import { FooterComponent } from './footer/footer.component';
+import { OurWorkComponent } from './our-work/our-work.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,10 +18,14 @@ import { FoundingsComponent } from './foundings/foundings.component';
     HomeComponent,
     VisionComponent,
     FoundingsComponent,
+    GetInvolvedComponent,
+    FooterComponent,
+    OurWorkComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
