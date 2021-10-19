@@ -9,7 +9,7 @@
     background-color: #fff;
     margin: 5%;
     text-align: left;
-    font-family: "Open Sans";
+    font-family: "Alegreya";
     font-size: 18px;
 }
 .storyImg{
@@ -36,7 +36,7 @@ button {
     color:red;
     background-color: white;
     text-align: center;
-    font-size: 28px;
+    font-size: 25px;
     padding: 10px;
     transition: all 0.5s;
     cursor: pointer;
@@ -59,10 +59,16 @@ button span:after {
   
 button:hover span {
     padding-right: 25px;
+    
 
 }
-  
 button:hover span:after {
     opacity: 1;
     right: 0;
+}
+.coverText{
+    color: #00203FFF;
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
 }

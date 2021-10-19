@@ -1,0 +1,51 @@
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10px;;
+  }
+.footerPage{
+      background: #b1d877;
+
+}
+.footerLogo{
+    padding-left: 2%;
+}
+.footerName{
+    padding-left: 12%;
+    color:#00203FFF;
+}
+.footerLogo{
+    padding-top: 5%;
+    padding-bottom: auto;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+  
+  .fa-instagram {
+    background: #833AB4;
+    color: white;
+}
+#mailId{
+    margin-bottom: 26px;
+}
