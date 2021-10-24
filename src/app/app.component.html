@@ -1,3 +1,4 @@
+
 <div>
 <nav class="navbar navbar-default" role="navigation">
   <div class="container heder-center-div">
@@ -9,46 +10,91 @@
           <span class="icon-bar"></span>
         </button>
         <img width="46" alt="Organisation Logo" src="assets/Logo_without background.png"/>
-      </div>
+    </div>
       <div class="collapse navbar-collapse" id="my-example">
           <nav id="dropdownmenu" class="navbar-right">
              <ul>
-	<li class="has-sub">
-	     <span class="submenu"></span>
-	     <a href="#">Home</a>
-	</li>
-	<li class="has-sub">
-	     <span class="submenu"></span>
-	     <a href="#" routerLink="/aboutUS" >About us</a>
-	</li>
-  <li class="has-sub">
-        <span class="submenu"></span>
-        <a href="#" >Our work</a>
-   </li>
-   <li class="has-sub">
-    <span class="submenu"></span>
-    <a href="#">Resources</a>
-  </li>
-  <li class="has-sub">
-    <span class="submenu"></span>
-    <a href="#" routerLink="/getInvolved">Get involved</a>
-  </li>
-  <li class="has-sub">
-    <span class="submenu"></span>
-    <a href="#">Contact</a>
-  </li>
-  <li class="has-sub">
-    <span class="submenu"></span>
-    <a id ="donate" href="#">Donate</a>
-  </li>
-   </ul>
-   
-      </nav>
+                  <li class="has-sub">
+                      <span class="submenu"></span>
+                      <a href="#">Home</a>
+                  </li>
+                    <li class="has-sub">
+                        <span class="submenu"></span>
+                        <a href="#" routerLink="/aboutUS" >About us</a>
+                    </li>
+                    <li class="has-sub">
+                          <span class="submenu"></span>
+                          <a href="#" >Our work</a>
+                    </li>
+                    <li class="has-sub">
+                      <span class="submenu"></span>
+                      <a href="#">Resources</a>
+                    </li>
+                    <li class="has-sub">
+                      <span class="submenu"></span>
+                      <a href="#" routerLink="/getInvolved">Get involved</a>
+                    </li>
+                    <li class="has-sub">
+                      <span class="submenu"></span>
+                      <a href="#">Contact</a>
+                    </li>
+                    <li class="has-sub">
+                      <span class="submenu"></span>
+                      <a id ="donate" href="#">Donate</a>
+                    </li>
+              </ul>
+            </nav>
+        </div>
+    </div>
+  </nav>
+<div class="cd-main-content">
+  <img  width="46" style="margin-left: 5%;" class="mylogo" src="assets/Logo_without background.png"/>
+	<a href="#0" class="cd-btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+</div>
+<div class="cd-panel from-left">
+	<header class="cd-panel-header">
+		<img width="46" style="margin-left: 5%;" class="mylogo" src="assets/Logo_without background.png"/>
+		<a href="#0" class="cd-panel-close"></a>
+	</header>
+	<div class="cd-panel-container">
+		<div class="cd-menu">
+			<nav class="mainNav accordion-nav">
+				<ul>
+					<li class="has-subnav" style="position: relative;">
+						<a href="#" style="margin-right: 20%;">Home</a>
+						<span class="accordion-btn-wrap" style="width: 20%; position: absolute; top: 0px; text-align: center; cursor: pointer; display: inline-block; right: 0px;"></span>
+					</li>
+					<li class="has-subnav" style="position: relative;">
+						<a href="#" routerLink="/aboutUS" style="margin-right: 20%;">About us</a>
+						<span class="accordion-btn-wrap" style="width: 20%; position: absolute; top: 0px; text-align: center; cursor: pointer; display: inline-block; right: 0px;"></span>
+					</li>
+          <li class="has-subnav" style="position: relative;">
+						<a href="#" style="margin-right: 20%;">Our work</a>
+						<span class="accordion-btn-wrap" style="width: 20%; position: absolute; top: 0px; text-align: center; cursor: pointer; display: inline-block; right: 0px;"></span>
+					</li>
+          <li class="has-subnav" style="position: relative;">
+						<a href="#" style="margin-right: 20%;">Resources</a>
+						<span class="accordion-btn-wrap" style="width: 20%; position: absolute; top: 0px; text-align: center; cursor: pointer; display: inline-block; right: 0px;"></span>
+					</li>
+          <li class="has-subnav" style="position: relative;">
+						<a href="#" routerLink="/getInvolved" style="margin-right: 20%;">Get involved</a>
+						<span class="accordion-btn-wrap" style="width: 20%; position: absolute; top: 0px; text-align: center; cursor: pointer; display: inline-block; right: 0px;"></span>
+					</li>
+          <li class="has-subnav" style="position: relative;">
+						<a href="#" style="margin-right: 20%;">Contact</a>
+						<span class="accordion-btn-wrap" style="width: 20%; position: absolute; top: 0px; text-align: center; cursor: pointer; display: inline-block; right: 0px;"></span>
+					</li>
+          <li class="has-subnav" style="position: relative;">
+						<a href="#" style="margin-right: 20%;">Donate</a>
+						<span class="accordion-btn-wrap" style="width: 20%; position: absolute; top: 0px; text-align: center; cursor: pointer; display: inline-block; right: 0px;"></span>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 </div>
 </div>
-</nav>
-</div>
-<div>
+<div id="carousel-styling">
 <router-outlet></router-outlet>
 </div>
 <div>
