@@ -121,27 +121,31 @@
 	height:100%;
 	width:100%;
 	visibility:hidden;
-	transition:visibility 0s, .6s;
+	transition:visibility 0s, 0s;
+	background: rgba(0,0,0,.54);
 	z-index:21;
 }
 
-.cd-panel:after{
+/*.cd-panel:after{
 	position:absolute;
 	top:0;
 	left:0;
 	height:100%;
 	width:100%;
-	background:0 0;
 	cursor:pointer;
+	background: black;
+    opacity: 0.5;
 	transition: background .3s .3s;
-}
+	z-index:50;
+}*/
 
 .cd-panel-header{
 	position:fixed;
 	width:90%;
 	height:auto;
 	line-height:50px;
-	background: rgba(255,255,255,.96);
+	background-color: #f8f8f8;
+	/*background: rgba(255,255,255,.96);*/
 	z-index: 2;
 	transition: top .3s 0s;
 	margin-top: 0!important;
@@ -154,15 +158,21 @@
 
 .cd-panel.is-visible{
 	visibility:visible;
-	transition: visibility 0s 0s;
+	transition: left .3s ease-in-out;
 }
 
 .from-left .cd-panel-container{
 	left:0;
 	transform: translate3d(-100%,0,0);
 }
-
-.cd-panel-container{
+.cd-panel-close>i
+{
+	color: black;
+    font-size: 27px;
+    float: right;
+    padding: 2% 3%;
+}
+	.cd-panel-container{
 	position:fixed;
 	width:90%;
 	height:100%;
@@ -172,7 +182,7 @@
 	transition-property: transform;
 	transition-duration: .3s;
 	transition-delay: .3s;
-	padding-top: 75px;
+	padding-top: 50px;
 }
 
 nav{
@@ -237,7 +247,7 @@ ul li.has-subnav .accordion-btn i{
 
 @media only screen and (max-width: 815px){
 	.is-visible .cd-panel-container{
-		padding-top: 55px;
+		padding-top: 50px;
 	}
 	.navbar-default .navbar-toggle{
 		display: none!important;
