@@ -72,3 +72,6 @@ button:hover span:after {
     text-align: right;
     padding: 10px;
 }
+.carousel-caption{
+    padding-bottom: 0px;
+}
