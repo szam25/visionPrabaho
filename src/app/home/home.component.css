@@ -75,3 +75,13 @@ button:hover span:after {
 .carousel-caption{
     padding-bottom: 0px;
 }
+
+@media only screen and (max-width: 700px){
+button{
+    font-size: 10px;
+    padding: 4px;
+    background-color: red;
+    color: white;
+    border-radius:20px;
+}
+}
