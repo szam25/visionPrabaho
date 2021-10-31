@@ -5,9 +5,9 @@
     <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
     <label for="name">Name: </label>
     <input id="name" type="text" formControlName="name" required>
-    <label for="name">Email: </label>
+    <label for="email">Email: </label>
     <input id="email" type="text" formControlName="email" required>
-    <label for="name">Phone Number: </label>
+    <label for="phNumber">Phone Number: </label>
     <input id="phNumber" type="number" formControlName="phNumber" required>
     <p>Complete the form to enable button.</p>
     <a><button type="submit" [disabled]="!profileForm.valid">Submit</button></a>
