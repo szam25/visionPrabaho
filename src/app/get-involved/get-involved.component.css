@@ -7,11 +7,11 @@
 form {
     padding-top: 1rem;
     text-align: center;
-    color:#00203FFF;
+    color:#FFF;
 }
 div{
     text-align: center; 
-    color:#00203FFF;
+    color:#FFF;
 }
 label {
     display: block;
@@ -20,10 +20,67 @@ label {
 }
 button{
     margin: 20px;
-    color:red;
-    background-color: white;
+    border-radius: 23px;
+    color: #FFF;
+    background-color: #58bbd2;
+    width: 40%;
 }
+
 button:disabled,
 button[disabled]{
-    color:black
+    opacity: 0.5;
+}
+.contact-form-container{
+    background-color: #f6a856;
+    width:70%;
+    margin:auto;
+    margin-bottom: 4%;
+}
+h1{
+    color: #FFF;
+    padding-top: 3%;
+}
+p{
+    color: #FFF;
+}
+.form-group
+{
+    width: 80%;
+    margin: 8% auto;
+    padding-bottom: 5%;
+    position: relative;
+}
+.form-input{
+    background-color: #f6a856 !important;
+    outline:none !important;
+    border-color: transparent;
+    width:100%;
+    border-bottom: 1px solid #FFF;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+}
+.form-label{
+    text-align: initial;
+    padding-left: 2%;
+    font-size: 14px;
+    transition: 0.25s ease;
+    -webkit-transition: 0.25s ease;
+    position: absolute;
+}
+.form-input:focus{
+    background-color: #f6a856;
+    outline:none;
+}
+
+.form-input:focus + .form-label{
+    top: -20px;
+    font-size:12px;
+}
+.form-input:valid + .form-label{
+    top: -20px;
+    font-size:12px;
+}
+input:-webkit-autofill { 
+    transition: all 0s 50000s;     
 }
