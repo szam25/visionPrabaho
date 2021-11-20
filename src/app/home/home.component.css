@@ -7,7 +7,6 @@
 #mainHomeText{
     color: #00203FFF;
     background-color: #fff;
-    margin: 5%;
     text-align: left;
     font-family: "Alegreya";
     font-size: 18px;
@@ -19,6 +18,7 @@
 }
 #textPic{
     padding: 7%; 
+    display: inline-flex;
 }
 .visionText{
     color:#00203FFF;
@@ -76,6 +76,48 @@ button:hover span:after {
     padding-bottom: 0px;
 }
 
+.impact-style{
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    background-color: #e7e7e7;
+    margin: 0 0 3% 0;
+}
+
+.impact-centers{
+    display: inline-flex;
+    background-color: #b1d877;
+    margin: 0 0 3% 0;
+    width:100%;
+}
+.impact-details{
+    flex-grow: 1;
+    text-align: center;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: repeat(2, min-content) 1fr;
+    grid-template-columns: 100%;
+    margin: 5% 0;
+}
+.impact-text{
+    font-size: 24px;
+    line-height: 1.4em;
+    text-align: center;
+    
+}
+
+.white-color{
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px){
+    .impact-text{
+        font-size: 18px;
+    }
+
+}
 @media only screen and (max-width: 700px){
 button{
     font-size: 10px;
