@@ -10,6 +10,10 @@ import { GetInvolvedComponent } from './get-involved/get-involved.component';
 import { FooterComponent } from './footer/footer.component';
 import { OurWorkComponent } from './our-work/our-work.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EducationComponent } from './education/education.component';
+import { EnvironmentDetailComponent } from './environment-detail/environment-detail.component';
+import { EmpowermentComponent } from './empowerment/empowerment.component';
+import { EqualityComponent } from './equality/equality.component';
 
 
 @NgModule({
@@ -21,6 +25,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     GetInvolvedComponent,
     FooterComponent,
     OurWorkComponent,
+    EducationComponent,
+    EnvironmentDetailComponent,
+    EmpowermentComponent,
+    EqualityComponent,
   ],
   imports: [
     BrowserModule,

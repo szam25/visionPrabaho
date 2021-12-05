@@ -100,10 +100,11 @@
 }
 #donate{
 		color: black !important;	
-		background: #8cdcda !important;
+		background: #8cdcda;
 	}	
 #donate:hover{	
 		color: red !important;
+		background: #1cb8a1 !important;
 }
 .navbar{
 			overflow: hidden;
