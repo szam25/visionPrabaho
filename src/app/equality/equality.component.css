@@ -1,0 +1,24 @@
+.foundingsHeader{
+    text-align: left;
+    color:#00203FFF;
+}
+#mainEqualityText{
+    color:#00203FFF;
+    background-color: #fff;
+    margin: 3% 5%;
+    text-align: left;
+    font-family: "Alegreya";
+    font-size: 18px;
+    display: inline-flex;
+}
+.equality-content{
+    flex-grow: 1;
+}
+.storyImg{
+    width: 100%;
+    padding: 16px;
+    padding-right: 20%;
+}
+#textEqualityPic{
+    padding: 0 7%; 
+}
