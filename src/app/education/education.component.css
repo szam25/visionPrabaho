@@ -16,9 +16,21 @@
 }
 .storyImg{
     width: 100%;
-    padding: 16px;
-    padding-right: 20%;
+    padding: 7% 7% 0% 7%;
 }
 #textEducationPic{
-    padding: 0 7%; 
+    padding: 0% 7%; 
+    width: 120%;
+}
+@media screen and (max-width: 1024px){
+    #mainEducationText{
+        flex-direction: column;
+    }
+    #textEducationPic{
+        padding: 0 7%; 
+        width: 100%;
+    }
+    .storyImg{
+        padding: 7%;
+    }
 }
