@@ -16,9 +16,22 @@
 }
 .storyImg{
     width: 100%;
-    padding: 16px;
-    padding-right: 20%;
+    padding: 0% 7%;
 }
 #textEqualityPic{
-    padding: 0 7%; 
+    padding: 0% 7%; 
+    width: 120%;
+}
+
+@media screen and (max-width: 1024px){
+    #mainEqualityText{
+        flex-direction: column;
+    }
+    #textEqualityPic{
+        padding: 0 7%; 
+        width: 100%;
+    }
+    .storyImg{
+        padding: 7%;
+    }
 }
