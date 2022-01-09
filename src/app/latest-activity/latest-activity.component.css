@@ -1,0 +1,61 @@
+
+.impact-style{
+    text-align: center;
+    color:#00203FFF;
+    font-family: 'Eczar', serif;
+    font-size: 40px;
+    font-style: italic;
+    background-color: #e7e7e7;
+    margin: 0 0 3% 0;
+}
+
+.impact-centers{
+    display: inline-flex;
+    background-color: #b1d877;
+    margin: 0 0 3% 0;
+    width:100%;
+}
+.home-content{
+    flex-grow: 1;
+}
+
+.impactContain {
+    position: relative;
+    width: 25%;
+  }
+  
+  .image {
+    display: block;
+    width: 240px;
+    height: auto;
+  }
+  
+  .overlayText {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #b1d877;
+  }
+  
+  .impactContain:hover .overlayText {
+    opacity: 1;
+  }
+  
+  .text {
+    color: #00203FFF;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
