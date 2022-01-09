@@ -7,11 +7,11 @@
 form {
     padding-top: 1rem;
     text-align: center;
-    color:#FFF;
+    color:#00203FFF;
 }
 div{
     text-align: center; 
-    color:#FFF;
+    color:#00203FFF;
 }
 label {
     display: block;
@@ -21,7 +21,7 @@ label {
 button{
     margin: 20px;
     border-radius: 23px;
-    color: #FFF;
+    color: #00203FFF;
     background-color: #58bbd2;
     width: 40%;
 }
@@ -37,11 +37,11 @@ button[disabled]{
     margin-bottom: 4%;
 }
 h1{
-    color: #FFF;
+    color: #00203FFF;
     padding-top: 3%;
 }
 p{
-    color: #FFF;
+    color: #00203FFF;
 }
 .form-group
 {
