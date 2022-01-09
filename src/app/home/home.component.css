@@ -8,7 +8,7 @@
     background-color: #e7e7e7;
     margin: 3% 0 3% 0;
 }
-#mainHomeText{
+.mainHomeTextStyle{
     color: #00203FFF;
     background-color: #fff;
     text-align: left;
@@ -29,6 +29,10 @@
     padding: 7% 7% 0% 7%;
 }
 #textPic{
+    padding: 0% 7%; 
+    width: 120%;
+}
+.textMentorPicStyle{
     padding: 0% 7%; 
     width: 120%;
 }
@@ -150,10 +154,14 @@ button{
 }
 }
 @media screen and (max-width: 1024px){
-    #mainHomeText{
+    .mainHomeTextStyle{
         flex-direction: column;
     }
     #textPic{
+        padding: 0 7%; 
+        width: 100%;
+    }
+    .textMentorPicStyle{
         padding: 0 7%; 
         width: 100%;
     }
