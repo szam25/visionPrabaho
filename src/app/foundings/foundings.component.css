@@ -5,18 +5,32 @@
 #mainFoundingsText{
     color:#00203FFF;
     background-color: #fff;
-    margin: 5%;
+    margin: 3% 5%;
     text-align: left;
     font-family: "Alegreya";
     font-size: 18px;
+    display: inline-flex;
+}
+.educate-content{
+    flex-grow: 1;
 }
 .storyImg{
-    width: 70%;
-    padding: 16px;
+    width: 100%;
+    padding: 7% 7% 0% 7%;
 }
 #textPic{
-    padding: 7%; 
+    padding: 0% 7%; 
+    width: 120%;
 }
-.visionText{
-    color:#00203FFF;
+@media screen and (max-width: 1024px){
+    #mainFoundingsText{
+        flex-direction: column;
+    }
+    #textPic{
+        padding: 0 7%; 
+        width: 100%;
+    }
+    .storyImg{
+        padding: 7%;
+    }
 }

@@ -6,7 +6,7 @@
     font-size: 40px;
     font-style: italic;
     background-color: #e7e7e7;
-    margin: 0 0 3% 0;
+    margin: 3% 0 3% 0;
 }
 #mainHomeText{
     color: #00203FFF;
@@ -14,15 +14,23 @@
     text-align: left;
     font-family: "Alegreya";
     font-size: 18px;
-    margin-top: 2%;
+    margin: 3% 5%;
+    display: inline-flex;
+}
+.home-content{
+    flex-grow: 1;
+}
+.foundingsHeader{
+    text-align: left;
+    color:#00203FFF;
 }
 .storyImg{
-    width: 70%;
-    padding: 16px;
+    width: 100%;
+    padding: 7% 7% 0% 7%;
 }
 #textPic{
-    padding: 7%; 
-    display: inline-flex;
+    padding: 0% 7%; 
+    width: 120%;
 }
 .visionText{
     color:#00203FFF;
@@ -140,4 +148,16 @@ button{
     color: white;
     border-radius:20px;
 }
+}
+@media screen and (max-width: 1024px){
+    #mainHomeText{
+        flex-direction: column;
+    }
+    #textPic{
+        padding: 0 7%; 
+        width: 100%;
+    }
+    .storyImg{
+        padding: 7%;
+    }
 }
