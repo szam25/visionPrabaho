@@ -1,20 +1,40 @@
-.visionHeader{
+.foundingsHeader{
     text-align: left;
     color:#00203FFF;
-    padding-left: 20px;
 }
 #mainVisionText{
     color:#00203FFF;
     background-color: #fff;
-    margin: 5%;
+    margin: 3% 5%;
     text-align: left;
     font-family: "Alegreya";
     font-size: 18px;
+    display: inline-flex;
+
+}
+.educate-content{
+    flex-grow: 1;
 }
 .visionImg{
-    width: 70%;
-    padding: 16px;
+    width: 100%;
+    padding: 7% 7% 0% 7%;
 }
 #textVisionPic{
-    padding: 5%; 
+    padding: 0% 7%; 
+    width: 120%;
+}
+li{
+    margin:14px 0;
+}
+@media screen and (max-width: 1024px){
+    #mainVisionText{
+        flex-direction: column;
+    }
+    #textVisionPic{
+        padding: 0 7%; 
+        width: 100%;
+    }
+    .visionImg{
+        padding: 7%;
+    }
 }
