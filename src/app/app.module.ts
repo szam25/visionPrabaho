@@ -14,6 +14,7 @@ import { EducationComponent } from './education/education.component';
 import { EnvironmentDetailComponent } from './environment-detail/environment-detail.component';
 import { EmpowermentComponent } from './empowerment/empowerment.component';
 import { EqualityComponent } from './equality/equality.component';
+import { LatestActivityComponent } from './latest-activity/latest-activity.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { EqualityComponent } from './equality/equality.component';
     EnvironmentDetailComponent,
     EmpowermentComponent,
     EqualityComponent,
+    LatestActivityComponent,
   ],
   imports: [
     BrowserModule,
