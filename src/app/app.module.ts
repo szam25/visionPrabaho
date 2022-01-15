@@ -38,6 +38,6 @@ import { LatestActivityComponent } from './latest-activity/latest-activity.compo
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,EducationComponent]
 })
 export class AppModule { }
