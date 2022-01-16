@@ -17,6 +17,16 @@
     margin: 3% 5%;
     display: inline-flex;
 }
+.mainPatronTextStyle{
+    color: #00203FFF;
+    background-color: #fff;
+    text-align: justify;
+    font-family: "Alegreya";
+    font-size: 18px;
+    margin: 3% 5%;
+    display: inline-flex;
+    height: 400px;
+}
 .home-content{
     flex-grow: 1;
 }
@@ -28,6 +38,27 @@
     width: 100%;
     padding: 7% 7% 0% 7%;
 }
+#myCarouselMentor{
+    width: 100%;
+}
+#myCarouselMentor>ol.carousel-indicators {
+    display:inline-flex;
+    justify-content: center;
+  }
+  
+  #myCarouselMentor>ol.carousel-indicators li,
+  #myCarouselMentor>ol.carousel-indicators li.active {
+    width: 13%;
+    height: 4px;
+    margin:0 2%;
+    border-radius: 0;
+    border: 0;
+    background: rgba(0,0,0,.5);
+  }
+  
+  #myCarouselMentor>ol.carousel-indicators li.active {
+    background: #b1d877;
+  }
 #textPic{
     padding: 0% 7%; 
     width: 120%;
