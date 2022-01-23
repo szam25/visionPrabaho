@@ -2,11 +2,11 @@
     text-align: left;
     color:#00203FFF;
 }
-#mainEqualityText{
+.mainEqualityText{
     color:#00203FFF;
     background-color: #fff;
-    margin: 3% 5%;
-    text-align: left;
+    margin: 3% 5% 3% 12%;
+    text-align: justify;
     font-family: "Alegreya";
     font-size: 18px;
     display: inline-flex;
@@ -16,22 +16,50 @@
 }
 .storyImg{
     width: 100%;
-    padding: 0% 7%;
+    padding: 7% 7% 0% 7%;
 }
-#textEqualityPic{
-    padding: 0% 7%; 
-    width: 120%;
+.textEqualityPic{
+    padding: 0% 7% 0% 0%; 
+    width: 320%;
+}
+.textEqualityPicReverse{
+    padding:0% 0% 0% 7%; 
+    width: 320%;
+}
+#myCarousel7{
+	width:100%;
+    height: 100%;
+    padding: 15% 0% 0% 7%;
+
+}
+.carousel {
+    width:100%;
+    height:100%;
+}
+#myCarousel8{
+    width:100%;
+    height: 100%;
+    padding:  0% 7% 0% 0%;
+}
+.carousel-inner{
+    height: 100%;
+    width:100%
+}
+.carousel-inner>.item{
+    height: 100%;
+    width:100%;
 }
 
+.carousel-inner>.item>img{
+    min-width: 100% !important;
+    min-height: 100%;
+}
 @media screen and (max-width: 1024px){
-    #mainEqualityText{
+    .mainEqualityText{
         flex-direction: column;
     }
-    #textEqualityPic{
+    .textEqualityPic, .textEqualityPicReverse{
         padding: 0 7%; 
         width: 100%;
-    }
-    .storyImg{
-        padding: 7%;
     }
 }
