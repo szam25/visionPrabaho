@@ -8,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class DonateComponent implements OnInit {
 
   constructor() { }
-
+  
+  isChecked : boolean = true; 
   ngOnInit(): void {
+    
   }
-
+  switchOption(){
+    if(document.getElementById('account')?.hasAttribute('checked')) {
+      this.isChecked=true;
+  }
+  else
+  this.isChecked=false;
+  
+}
 }
