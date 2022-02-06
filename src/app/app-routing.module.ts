@@ -9,6 +9,7 @@ import { EducationComponent } from './education/education.component';
 import { EmpowermentComponent } from './empowerment/empowerment.component';
 import { EnvironmentDetailComponent } from './environment-detail/environment-detail.component';
 import { EqualityComponent } from './equality/equality.component';
+import { DonateComponent } from './donate/donate.component'
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:"workEducationDetails", component: EducationComponent},
   {path:"workEmpowermentDetails", component: EmpowermentComponent},
   {path:"workEnvirontmentDetails", component: EnvironmentDetailComponent},
-  {path:"workEqualityDetails", component: EqualityComponent}
+  {path:"workEqualityDetails", component: EqualityComponent},
+  {path:"donatePage", component: DonateComponent}
   
 ];
 

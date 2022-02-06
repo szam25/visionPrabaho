@@ -1,0 +1,41 @@
+<div class="donate-page">
+    <img class="groupPic" src="../../assets/DSC_0178.JPG" alt="Group picture">
+    <div class="donate-comtent text-style"><b>“Giving is not just about make a donation it’s about Making a
+            Difference”</b>
+        <br>
+        <br>
+        Vision Prabaho is devoted to continuing to serve the people and the world. Your each and every contribution
+        fuelled us to keep on moving in our endeavour. As a new organisation, we consider ourselves privileged to have
+        been given the opportunity to serve the society through your generous support.
+        <br>
+        <br>
+        Yes! Helping one person might not change the whole world, but it could change the world for one person. If you
+        wish to donate please select one of the <b>below payment options</b>. For any assistance related to donation
+        write to us on <b>vision.prabaho@gmail.com</b> or, call <b>9804855138</b>. Please continue your support in
+        exploring potential opportunities for undertaking future initiatives and addressing the emergency demand.
+    </div>
+    <div class="payment-options">
+        <div class="payment-option text-style">
+            <input type="radio" id="account" name="fav_language" value="account" (change)="switchOption()">
+            <label class="payment-text" for="account">By using Bank Details</label><br>
+            <input type="radio" id="qrcode" name="fav_language" value="qrcode" checked>
+            <label class="payment-text" for="qrcode">Scan QR code</label><br>
+        </div>
+        <div class="separator"  *ngIf="!isChecked"></div>
+        <div class="qrseparator" *ngIf="isChecked"></div>
+        <div class="payment-details">
+            <div class="bank-payment text-style text-justify" *ngIf="!isChecked">
+                <p><b>Bank: </b>Axis Bank</p>
+                <p><b>Branch Name: </b>Shakuntala Park</p>
+                <p><b>Address: </b>183, Ground floor, Merlin Emerald, Biren Roy road, Kolkata - 700061</p>
+                <p><b>Beneficiary Name: </b>Vision Prabaho</p>
+                <p><b>Account No.: </b>921020039840910</p>
+                <p><b>RTGS /NEFT / IFSC: </b>UTIB0002636</p>
+                <p><b>Permanent Account Number: </b>AADTV4145Q</p>
+            </div>
+            <div class="qr-code" *ngIf="isChecked">
+                <img width="300px" style="padding-top:6%;" alt="foundings picture 1" src="assets/QR_code_Vision Prabaho.jpg">
+            </div>
+        </div>
+    </div>
+</div>
