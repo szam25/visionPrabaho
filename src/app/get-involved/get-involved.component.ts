@@ -11,12 +11,9 @@ import { FormControl, FormGroup,Validators, FormBuilder } from '@angular/forms';
 export class GetInvolvedComponent implements OnInit {
   profileForm = this.fb.group({
     name : ['', Validators.required],
-    email : ['', Validators.required],
-    phNumber : ['', Validators.required],
+    email : ['', [Validators.required,Validators.email]],
+    phNumber : ['', [Validators.required, Validators.minLength(10)]],
   });
-  
-  
-  selectedCityIds: [] = [];
 
   constructor(private fb: FormBuilder) { }
 
