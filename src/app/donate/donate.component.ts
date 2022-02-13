@@ -6,17 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./donate.component.css']
 })
 export class DonateComponent implements OnInit {
-
   constructor() { }
 
   isChecked: boolean = true;
   ngOnInit(): void {
-    
+
   }
   switchOption() {
-    if (document.getElementById('account')?.hasAttribute('checked'))
-      this.isChecked = true;
-    else
+    if (document.getElementById('account')?.hasAttribute('checked')){
+      document.getElementById('qrcode')?.setAttribute('checked', 'checked');
       this.isChecked = false;
+    }
+    else{
+      document.getElementById('account')?.setAttribute('checked', 'checked');
+      this.isChecked = true;
+    }
   }
 }
