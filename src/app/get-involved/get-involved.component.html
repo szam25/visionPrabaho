@@ -1,24 +1,27 @@
 <div>
-<img class="groupPic" src="../../assets/membership.JPG" alt="Group picture">
-<div class="contact-form-container">
-    <h1>Vision Prabaho Contact Form</h1>
-    <p>Do you want to be a part of the team Vision Prabaho?</p>
-    <form id="contact-form" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
-    <div class="form-group">
-       <input class="form-input" id="name" type="text" formControlName="name" required>
-       <label class="form-label" for="name">Name: </label>
+    <img class="groupPic" src="../../assets/membership.JPG" alt="Group picture">
+    <div class="contact-form-container">
+        <h1>Vision Prabaho Contact Form</h1>
+        <p>Do you want to be a part of the team Vision Prabaho?</p>
+        <form id="contact-form" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <input class="form-input" id="name" type="text" formControlName="name" required>
+                <label class="form-label" for="name">Name: </label>
+                <!-- <p *ngIf="profileForm.name.required">
+                    Name is required
+                </p> -->
+            </div>
+            <div class="form-group">
+                <input class="form-input" id="email" type="text" formControlName="email" required>
+                <label class="form-label" for="email">Email: </label>
+            </div>
+            <div class="form-group">
+                <input class="form-input" id="phNumber" type="number" formControlName="phNumber" required>
+                <label class="form-label" for="phNumber">Phone Number: </label>
+            </div>
+            <p>Complete the form to enable button.</p>
+            <a><button type="submit" [disabled]="!profileForm.valid">Submit</button></a>
+
+        </form>
     </div>
-    <div class="form-group">
-        <input class="form-input" id="email" type="text" formControlName="email" required>
-        <label class="form-label" for="email">Email: </label>
-    </div>
-    <div class="form-group">
-        <input class="form-input" id="phNumber" type="number" formControlName="phNumber" required>
-        <label class="form-label" for="phNumber">Phone Number: </label>
-    </div>
-    <p>Complete the form to enable button.</p>
-    <a><button type="submit" [disabled]="!profileForm.valid">Submit</button></a>
-    
-</form>
-</div>
 </div>
