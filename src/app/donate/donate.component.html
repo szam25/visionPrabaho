@@ -15,16 +15,24 @@
         exploring potential opportunities for undertaking future initiatives and addressing the emergency demand.
     </div>
     <div class="payment-options">
-        <div class="payment-option text-style">
-            <input type="radio" id="account" name="fav_language" value="account" (change)="switchOption()">
-            <label class="payment-text" for="account">By using Bank Details</label><br>
-            <input type="radio" id="qrcode" name="fav_language" value="qrcode" checked>
-            <label class="payment-text" for="qrcode">Scan QR code</label><br>
+        <div class="payment-option text-style" (change)="switchOption()">
+            <div *ngIf="isChecked">
+                <input type="radio" id="account" name="fav_language" value="account" checked>
+                <label class="payment-text" for="account">By using Bank Details</label><br>
+                <input type="radio" id="qrcode" name="fav_language" value="qrcode">
+                <label class="payment-text" for="qrcode">Scan QR code</label><br>
+            </div>
+            <div *ngIf="!isChecked">
+                <input type="radio" id="account" name="fav_language" value="account">
+                <label class="payment-text" for="account">By using Bank Details</label><br>
+                <input type="radio" id="qrcode" name="fav_language" value="qrcode" checked>
+                <label class="payment-text" for="qrcode">Scan QR code</label><br>
+            </div>
         </div>
-        <div class="separator"  *ngIf="!isChecked"></div>
-        <div class="qrseparator" *ngIf="isChecked"></div>
+        <div class="separator" *ngIf="isChecked"></div>
+        <div class="qrseparator" *ngIf="!isChecked"></div>
         <div class="payment-details">
-            <div class="bank-payment text-style text-justify" *ngIf="!isChecked">
+            <div class="bank-payment text-style text-justify" *ngIf="isChecked">
                 <p><b>Bank: </b>Axis Bank</p>
                 <p><b>Branch Name: </b>Shakuntala Park</p>
                 <p><b>Address: </b>183, Ground floor, Merlin Emerald, Biren Roy road, Kolkata - 700061</p>
@@ -33,18 +41,10 @@
                 <p><b>RTGS /NEFT / IFSC: </b>UTIB0002636</p>
                 <p><b>Permanent Account Number: </b>AADTV4145Q</p>
             </div>
-<<<<<<< HEAD
-            <div class="qr-code" *ngIf="isChecked">
-                <img width="300px" style="padding-top:6%;" alt="foundings picture 1" src="assets/QR_code_Vision Prabaho.jpg">
-            </div>
-        </div>
-    </div>
-</div>
-=======
             <div class="qr-code" *ngIf="!isChecked">
-                <img width="90px"  style="padding-top:6%;" alt="foundings picture 1" src="assets/Testimoniel_2.jpg">
+                <img width="300px" style="padding-top:6%;" alt="foundings picture 1"
+                    src="assets/QR_code_Vision Prabaho.jpg">
             </div>
         </div>
     </div>
 </div>
->>>>>>> 2d67e5a4c1467d3c862c2c6ac4a36f27759ef65e
