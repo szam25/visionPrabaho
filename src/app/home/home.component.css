@@ -166,7 +166,7 @@ button:hover span:after {
 }
 
 #education:hover, #equality:hover, #empowerment:hover, #environment:hover{
-    background: #f6a856 !important;
+    background: #faf0e6 !important;
 }
 
 @media only screen and (max-width: 768px){
