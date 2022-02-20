@@ -9,26 +9,25 @@ import { FormControl, FormGroup,Validators, FormBuilder } from '@angular/forms';
 
 
 export class GetInvolvedComponent implements OnInit {
-  profileForm = this.fb.group({
-    name : ['', Validators.required],
-    email : ['', Validators.required],
-    phNumber : ['', Validators.required],
-  });
+  profileForm!: FormGroup;
+  submitted :boolean = false;
   
-  
-  selectedCityIds: [] = [];
-
   constructor(private fb: FormBuilder) { }
 
-  ngOnInit(): void {
-    const NAME_REQUIRED = "Please enter your name";
-    const EMAIL_REQUIRED = "Please enter your email";
-    const EMAIL_INVALID = "Please enter a correct email address format";
-
+  ngOnInit() {
+    this.profileForm = this.fb.group({
+      name : ['', [Validators.required,Validators.minLength(4)]],
+      email : ['', [Validators.required,Validators.email]],
+      phNumber : ['', [Validators.required,Validators.minLength(10),Validators.maxLength(10)]],
+    });
   }
   onSubmit() {
+    if (this.profileForm.invalid) {
+      this.submitted = true;
+  }
     // TODO: Use EventEmitter with form value
-    console.warn(this.profileForm.value);
+    console.warn(this.profileForm.value);//submit this value
     this.profileForm.reset();
   }
+  get f() { return this.profileForm.controls; }
 }

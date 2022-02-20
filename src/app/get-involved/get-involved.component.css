@@ -84,3 +84,8 @@ p{
 input:-webkit-autofill { 
     transition: all 0s 50000s;     
 }
+#errorText{
+    text-align: left; 
+    color:#00203FFF;
+    padding-left: 10%;
+}

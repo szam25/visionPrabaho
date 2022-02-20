@@ -40,6 +40,6 @@ import { DonateComponent } from './donate/donate.component';
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent,EducationComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

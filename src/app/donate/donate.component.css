@@ -40,3 +40,8 @@
 .payment-details{
     margin: auto 2%;
 }
+.qrseparator{
+    border-left: 6px solid #b1d877;
+    height: 540px;
+    margin: 0 4%;
+}

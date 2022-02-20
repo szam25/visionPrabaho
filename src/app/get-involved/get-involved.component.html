@@ -1,24 +1,34 @@
 <div>
-<img class="groupPic" src="../../assets/DSC_0178.JPG" alt="Group picture">
-<div class="contact-form-container">
-    <h1>Vision Prabaho Contact Form</h1>
-    <p>Do you want to be a part of the team Vision Prabaho?</p>
-    <form id="contact-form" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
-    <div class="form-group">
-       <input class="form-input" id="name" type="text" formControlName="name" required>
-       <label class="form-label" for="name">Name: </label>
+    <img class="groupPic" src="../../assets/membership.JPG" alt="Group picture">
+    <div class="contact-form-container">
+        <h1>Vision Prabaho Contact Form</h1>
+        <p>Do you want to be a part of the team Vision Prabaho?</p>
+        <form id="contact-form" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <input class="form-input" id="name" type="text" formControlName="name"
+                    [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+                <label class="form-label" for="name">Name: </label>
+            </div>
+            <div class="form-group">
+                <input class="form-input" id="email" type="text" formControlName="email"
+                    [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                <label class="form-label" for="email">Email: </label>
+            </div>
+            <div class="form-group">
+                <input class="form-input" id="phNumber" type="tel" formControlName="phNumber"
+                    [ngClass]="{ 'is-invalid': submitted && f.phNumber.errors }">
+                <label class="form-label" for="phNumber">Phone Number: </label>
+            </div>
+            <div id="errorText" *ngIf="!profileForm.valid">
+                <p>Complete the form to enable button.</p>
+                <ul>
+                    <li *ngIf="f.name.errors">Name should be atleast 4 characters</li>
+                    <li *ngIf="f.email.errors">email should be in correct format</li>
+                    <li *ngIf="f.phNumber.errors">Phone Number should be 10 digits</li>
+                </ul>
+            </div>
+            <a><button type="submit" [disabled]="!profileForm.valid">Submit</button></a>
+
+        </form>
     </div>
-    <div class="form-group">
-        <input class="form-input" id="email" type="text" formControlName="email" required>
-        <label class="form-label" for="email">Email: </label>
-    </div>
-    <div class="form-group">
-        <input class="form-input" id="phNumber" type="number" formControlName="phNumber" required>
-        <label class="form-label" for="phNumber">Phone Number: </label>
-    </div>
-    <p>Complete the form to enable button.</p>
-    <a><button type="submit" [disabled]="!profileForm.valid">Submit</button></a>
-    
-</form>
-</div>
 </div>
