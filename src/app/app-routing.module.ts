@@ -9,7 +9,10 @@ import { EducationComponent } from './education/education.component';
 import { EmpowermentComponent } from './empowerment/empowerment.component';
 import { EnvironmentDetailComponent } from './environment-detail/environment-detail.component';
 import { EqualityComponent } from './equality/equality.component';
-import { DonateComponent } from './donate/donate.component'
+import { DonateComponent } from './donate/donate.component';
+import { ResourcesesComponent } from './resourceses/resourceses.component';
+import {PlasticUseComponent} from './plastic-use/plastic-use.component';
+
 
 
 const routes: Routes = [
@@ -21,7 +24,9 @@ const routes: Routes = [
   {path:"workEmpowermentDetails", component: EmpowermentComponent},
   {path:"workEnvirontmentDetails", component: EnvironmentDetailComponent},
   {path:"workEqualityDetails", component: EqualityComponent},
-  {path:"donatePage", component: DonateComponent}
+  {path:"donatePage", component: DonateComponent},
+  {path:"resourcePage",component: ResourcesesComponent},
+  {path:"plasticfree",component: PlasticUseComponent}
   
 ];
 
