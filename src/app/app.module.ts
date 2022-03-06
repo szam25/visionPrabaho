@@ -16,6 +16,8 @@ import { EmpowermentComponent } from './empowerment/empowerment.component';
 import { EqualityComponent } from './equality/equality.component';
 import { LatestActivityComponent } from './latest-activity/latest-activity.component';
 import { DonateComponent } from './donate/donate.component';
+import { ResourcesesComponent } from './resourceses/resourceses.component';
+import { PlasticUseComponent } from './plastic-use/plastic-use.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { DonateComponent } from './donate/donate.component';
     EqualityComponent,
     LatestActivityComponent,
     DonateComponent,
+    ResourcesesComponent,
+    PlasticUseComponent,
   ],
   imports: [
     BrowserModule,
