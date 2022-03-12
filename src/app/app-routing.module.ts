@@ -12,8 +12,8 @@ import { EqualityComponent } from './equality/equality.component';
 import { DonateComponent } from './donate/donate.component';
 import { ResourcesesComponent } from './resourceses/resourceses.component';
 import {PlasticUseComponent} from './plastic-use/plastic-use.component';
-
-
+import { KgpChronicalComponent } from './kgp-chronical/kgp-chronical.component';
+import { WhoGuidelinesComponent } from './who-guidelines/who-guidelines.component';
 
 const routes: Routes = [
   {path: 'aboutUS', component: VisionComponent},
@@ -26,7 +26,9 @@ const routes: Routes = [
   {path:"workEqualityDetails", component: EqualityComponent},
   {path:"donatePage", component: DonateComponent},
   {path:"resourcePage",component: ResourcesesComponent},
-  {path:"plasticfree",component: PlasticUseComponent}
+  {path:"plasticfree",component: PlasticUseComponent},
+  {path:"kgpChronical",component:KgpChronicalComponent},
+  {path:"whoGuideline",component:WhoGuidelinesComponent}
   
 ];
 
