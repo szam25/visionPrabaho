@@ -18,6 +18,8 @@ import { LatestActivityComponent } from './latest-activity/latest-activity.compo
 import { DonateComponent } from './donate/donate.component';
 import { ResourcesesComponent } from './resourceses/resourceses.component';
 import { PlasticUseComponent } from './plastic-use/plastic-use.component';
+import { KgpChronicalComponent } from './kgp-chronical/kgp-chronical.component';
+import { WhoGuidelinesComponent } from './who-guidelines/who-guidelines.component';
 
 
 @NgModule({
@@ -37,6 +39,8 @@ import { PlasticUseComponent } from './plastic-use/plastic-use.component';
     DonateComponent,
     ResourcesesComponent,
     PlasticUseComponent,
+    KgpChronicalComponent,
+    WhoGuidelinesComponent,
   ],
   imports: [
     BrowserModule,
