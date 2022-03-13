@@ -14,6 +14,9 @@ import { ResourcesesComponent } from './resourceses/resourceses.component';
 import {PlasticUseComponent} from './plastic-use/plastic-use.component';
 import { KgpChronicalComponent } from './kgp-chronical/kgp-chronical.component';
 import { WhoGuidelinesComponent } from './who-guidelines/who-guidelines.component';
+import { OtherActivityComponent } from './other-activity/other-activity.component';
+import { UnNailingTreesComponent } from './un-nailing-trees/un-nailing-trees.component';
+import { MangroveComponent } from './mangrove/mangrove.component';
 
 const routes: Routes = [
   {path: 'aboutUS', component: VisionComponent},
@@ -28,8 +31,10 @@ const routes: Routes = [
   {path:"resourcePage",component: ResourcesesComponent},
   {path:"plasticfree",component: PlasticUseComponent},
   {path:"kgpChronical",component:KgpChronicalComponent},
-  {path:"whoGuideline",component:WhoGuidelinesComponent}
-  
+  {path:"whoGuideline",component:WhoGuidelinesComponent},
+  {path:"otherActivity",component:OtherActivityComponent},
+  {path:"unnailingTrees",component:UnNailingTreesComponent},
+  {path:"mangrove",component:MangroveComponent}
 ];
 
 @NgModule({

@@ -20,6 +20,9 @@ import { ResourcesesComponent } from './resourceses/resourceses.component';
 import { PlasticUseComponent } from './plastic-use/plastic-use.component';
 import { KgpChronicalComponent } from './kgp-chronical/kgp-chronical.component';
 import { WhoGuidelinesComponent } from './who-guidelines/who-guidelines.component';
+import { OtherActivityComponent } from './other-activity/other-activity.component';
+import { UnNailingTreesComponent } from './un-nailing-trees/un-nailing-trees.component';
+import { MangroveComponent } from './mangrove/mangrove.component';
 
 
 @NgModule({
@@ -41,6 +44,9 @@ import { WhoGuidelinesComponent } from './who-guidelines/who-guidelines.componen
     PlasticUseComponent,
     KgpChronicalComponent,
     WhoGuidelinesComponent,
+    OtherActivityComponent,
+    UnNailingTreesComponent,
+    MangroveComponent,
   ],
   imports: [
     BrowserModule,
