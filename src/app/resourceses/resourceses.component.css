@@ -10,6 +10,16 @@
   border: 1px solid #e7e7e7;
 }
 
+.homeHeader{
+  text-align: center;
+  color:#00203FFF;
+  font-family: 'Eczar', serif;
+  font-size: 40px;
+  font-style: italic;
+  background-color: #e7e7e7;
+  margin: 1% 0 3% 0;
+}
+
 .grid {
     display: grid;
     grid-template-rows: 
