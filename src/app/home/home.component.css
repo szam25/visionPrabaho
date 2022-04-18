@@ -134,9 +134,9 @@ button:hover span:after {
 }
 
 .impact-centers{
-    display: inline-flex;
+    display: flex;
     background-color: #b1d877;
-    margin: 0 0 3% 0;
+    margin: 3% 0 3% 0;
     width:100%;
 }
 .impact-details{
@@ -182,6 +182,12 @@ button{
     background-color: red;
     color: white;
     border-radius:20px;
+}
+.impact-centers{
+   flex-direction: column;
+}
+.mainPatronTextStyle{
+    flex-direction: column;
 }
 }
 @media screen and (max-width: 1024px){

@@ -16,6 +16,13 @@ import { EmpowermentComponent } from './empowerment/empowerment.component';
 import { EqualityComponent } from './equality/equality.component';
 import { LatestActivityComponent } from './latest-activity/latest-activity.component';
 import { DonateComponent } from './donate/donate.component';
+import { ResourcesesComponent } from './resourceses/resourceses.component';
+import { PlasticUseComponent } from './plastic-use/plastic-use.component';
+import { KgpChronicalComponent } from './kgp-chronical/kgp-chronical.component';
+import { WhoGuidelinesComponent } from './who-guidelines/who-guidelines.component';
+import { OtherActivityComponent } from './other-activity/other-activity.component';
+import { UnNailingTreesComponent } from './un-nailing-trees/un-nailing-trees.component';
+import { MangroveComponent } from './mangrove/mangrove.component';
 
 
 @NgModule({
@@ -33,6 +40,13 @@ import { DonateComponent } from './donate/donate.component';
     EqualityComponent,
     LatestActivityComponent,
     DonateComponent,
+    ResourcesesComponent,
+    PlasticUseComponent,
+    KgpChronicalComponent,
+    WhoGuidelinesComponent,
+    OtherActivityComponent,
+    UnNailingTreesComponent,
+    MangroveComponent,
   ],
   imports: [
     BrowserModule,

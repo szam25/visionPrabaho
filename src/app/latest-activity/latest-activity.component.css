@@ -6,22 +6,23 @@
     font-size: 40px;
     font-style: italic;
     background-color: #e7e7e7;
-    margin: 0 0 3% 0;
+    margin: 0 0 8% 0;
 }
 
 .impact-centers{
     display: inline-flex;
     background-color: #b1d877;
-    margin: 0 0 3% 0;
+    margin: 0 0 0% 0;
     width:100%;
 }
 .home-content{
     flex-grow: 1;
+    text-align: center;
 }
 
 .impactContain {
     position: relative;
-    width: 25%;
+    /*width: 25%;*/
   }
   
   .image {
@@ -57,5 +58,15 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+  @media only screen and (max-width: 700px){
+    .impact-centers{
+      flex-direction: column;
+   }
+   .impactContain {
+    margin:3% 0 3% 0;
+    padding:auto;
+  }
   }
   
