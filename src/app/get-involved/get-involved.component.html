@@ -2,7 +2,7 @@
     <img class="groupPic" src="../../assets/membership.JPG" alt="Group picture">
     <div class="contact-form-container">
         <h1>Vision Prabaho Contact Form</h1>
-        <p>Do you want to be a part of the team Vision Prabaho?</p>
+        <p>Get in touch with us</p>
         <form id="contact-form" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
             <div class="form-group">
                 <input class="form-input" id="name" type="text" formControlName="name"
@@ -18,6 +18,11 @@
                 <input class="form-input" id="phNumber" type="tel" formControlName="phNumber"
                     [ngClass]="{ 'is-invalid': submitted && f.phNumber.errors }">
                 <label class="form-label" for="phNumber">Phone Number: </label>
+            </div>
+            <div class="form-group">
+                <input class="form-input" id="queries" type="tel" formControlName="queries"
+                    [ngClass]="{ 'is-invalid': submitted && f.queries.errors }">
+                <label class="form-label" for="queries">Your Queries: </label>
             </div>
             <div id="errorText" *ngIf="!profileForm.valid">
                 <p>Complete the form to enable button.</p>

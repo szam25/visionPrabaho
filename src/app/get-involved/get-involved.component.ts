@@ -19,6 +19,7 @@ export class GetInvolvedComponent implements OnInit {
       name : ['', [Validators.required,Validators.minLength(4)]],
       email : ['', [Validators.required,Validators.email]],
       phNumber : ['', [Validators.required,Validators.minLength(10),Validators.maxLength(10)]],
+      queries: ['', [Validators.minLength(4)]]
     });
   }
   onSubmit() {
