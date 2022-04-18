@@ -1,0 +1,22 @@
+.content{
+    font-family: "Alegreya";
+    font-size: 18px;
+    margin: 9% 5% 3% 12%;
+    color:#00203FFF;
+}
+article{
+    margin-bottom: 60px;
+}
+.resource-teaser__author{
+    font-family: "Alegreya";
+    font-size: 18px;
+    color:#00203FFF;
+}
+.resource-teaser__description{
+    font-family: "Alegreya";
+    font-size: 18px;
+    color:#00203FFF;
+}
+.black-color{
+    color: black !important
+}

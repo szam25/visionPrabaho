@@ -9,8 +9,14 @@ import { EducationComponent } from './education/education.component';
 import { EmpowermentComponent } from './empowerment/empowerment.component';
 import { EnvironmentDetailComponent } from './environment-detail/environment-detail.component';
 import { EqualityComponent } from './equality/equality.component';
-import { DonateComponent } from './donate/donate.component'
-
+import { DonateComponent } from './donate/donate.component';
+import { ResourcesesComponent } from './resourceses/resourceses.component';
+import {PlasticUseComponent} from './plastic-use/plastic-use.component';
+import { KgpChronicalComponent } from './kgp-chronical/kgp-chronical.component';
+import { WhoGuidelinesComponent } from './who-guidelines/who-guidelines.component';
+import { OtherActivityComponent } from './other-activity/other-activity.component';
+import { UnNailingTreesComponent } from './un-nailing-trees/un-nailing-trees.component';
+import { MangroveComponent } from './mangrove/mangrove.component';
 
 const routes: Routes = [
   {path: 'aboutUS', component: VisionComponent},
@@ -21,8 +27,14 @@ const routes: Routes = [
   {path:"workEmpowermentDetails", component: EmpowermentComponent},
   {path:"workEnvirontmentDetails", component: EnvironmentDetailComponent},
   {path:"workEqualityDetails", component: EqualityComponent},
-  {path:"donatePage", component: DonateComponent}
-  
+  {path:"donatePage", component: DonateComponent},
+  {path:"resourcePage",component: ResourcesesComponent},
+  {path:"plasticfree",component: PlasticUseComponent},
+  {path:"kgpChronical",component:KgpChronicalComponent},
+  {path:"whoGuideline",component:WhoGuidelinesComponent},
+  {path:"otherActivity",component:OtherActivityComponent},
+  {path:"unnailingTrees",component:UnNailingTreesComponent},
+  {path:"mangrove",component:MangroveComponent}
 ];
 
 @NgModule({
