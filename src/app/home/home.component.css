@@ -74,6 +74,10 @@
 .carousel-inner>.item>img{
     width: 100%;
 }
+.carousel-inner{
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+}
 .carousel-caption{
     text-align: right;
 }
